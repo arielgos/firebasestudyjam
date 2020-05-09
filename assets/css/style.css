@@ -1,0 +1,171 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #CCC;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#loading {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 10000;
+}
+
+#login {
+    position: fixed;
+    width: 320px;
+    padding: 30px;
+    margin-left: -190px;
+    margin-top: -140px;
+    top: 50vh;
+    left: 50%;
+    background-color: #039BE5;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+}
+
+#chat {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    background-color: #333;
+}
+
+#chat .messages {
+    position: absolute;
+    display: block;
+    float: left;
+    width: 100%;
+    top: 0px;
+    bottom: 106px;
+    background-color: #039BE5;
+    border-bottom: 1px solid #333;
+    overflow: auto;
+}
+
+#chat .messages .message {
+    position: relative;
+    display: block;
+    float: left;
+    width: auto;
+    clear: both;
+    padding: 10px;
+    background-color: #FFF;
+    border-radius: 7px;
+    margin: 5px 10px;
+}
+
+#chat .messages .message.right {
+    float: right;
+    background-color: #333;
+    text-align: right;
+}
+
+#chat .messages .message .data {
+    color: #333;
+    font-size: 16px;
+}
+
+#chat .messages .message.right .data {
+    color: #FFF;
+}
+
+#chat .messages .message .user {
+    color: #039BE5;
+    font-size: 13px;
+    font-style: italic;
+}
+
+#chat .messages .message .date {
+    color: #039BE5;
+    font-size: 10px;
+    font-style: #CCC;
+    font-style: italic;
+}
+
+#chat .sender {
+    position: absolute;
+    display: block;
+    float: left;
+    width: 100%;
+    bottom: 5px;
+    height: 100px;
+    background-color: #333;
+}
+
+#chat .sender textarea {
+    position: relative;
+    display: block;
+    float: left;
+    clear: left;
+    width: calc(75% - 20px);
+    height: 80px;
+    border: 0px;
+    font-size: 16px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#chat .sender button {
+    position: relative;
+    display: block;
+    float: left;
+    width: 25%;
+    height: 80px;
+    clear: none;
+    border: 0px;
+    border-radius: 0px;
+}
+
+p {
+    position: relative;
+    display: block;
+    float: left;
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 7px;
+    border: 0px;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    position: relative;
+    display: block;
+    float: left;
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 7px;
+    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 7px;
+    border: 0px;
+    background-color: #333;
+    color: #FFF;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}

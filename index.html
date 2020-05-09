@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Study Jam</title>
+    <link rel="stylesheet" href="assets/css/fa.min.css" />
+    <link rel="stylesheet" href="assets/css/sweetalert.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div id="loading"></div>
+    <div id="login">
+        <p>
+            Bienvenido, a Firebase Study Jam
+        </p>
+        <input type="text" id="username" placeholder="Ingresa tu nombre de usuario" />
+        <button id="enter">Ingresar</button>
+    </div>
+    <div id="chat">
+        <div class="messages">
+
+        </div>
+        <div class="sender">
+            <textarea cols="5" rows="3" placeholder="Ingresa tu mensaje" id="message"></textarea>
+            <button id="send">Enviar</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/sweetalert.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+    <script type="text/javascript" src="assets/js/firebase.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+
+</html>
